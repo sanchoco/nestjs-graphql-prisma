@@ -5,7 +5,7 @@ import {
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloServerPluginInlineTraceDisabled } from 'apollo-server-core';
-import { UserModule } from './users/users.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   providers: [],
@@ -15,7 +15,7 @@ import { UserModule } from './users/users.module';
       autoSchemaFile: true,
       plugins: [ApolloServerPluginInlineTraceDisabled()],
     }),
-    UserModule,
+    UsersModule,
   ],
   controllers: [],
 })

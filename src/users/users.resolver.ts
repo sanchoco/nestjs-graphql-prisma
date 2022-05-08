@@ -1,6 +1,6 @@
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
-import { UserCreateInput } from 'src/@prisma-class/user/user-create.input';
-import { User } from 'src/@prisma-class/user/user.model';
+import { UserCreateInput } from 'src/@prisma-dto/user/user-create.input';
+import { User } from 'src/@prisma-dto/user/user.model';
 import { UpdateUserInput } from './dto/update-user-input';
 import { UsersService } from './users.service';
 
