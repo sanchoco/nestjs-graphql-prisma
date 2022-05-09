@@ -3,7 +3,8 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm i -g yarn
+$ yarn
 $ npx prisma generate
 ```
 
@@ -18,4 +19,13 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+
+## Prisma
+```bash
+# database show data
+npx prisma studio
+# database sync
+npx prisma db push
 ```
